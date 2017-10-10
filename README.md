@@ -1,6 +1,6 @@
 # Launched
 
-A review site for Launch Projects
+A review site for Launch Projects.
 
 ## Getting Started
 
