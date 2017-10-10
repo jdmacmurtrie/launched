@@ -19,5 +19,6 @@
 /yarn-error.log
 /coverage
 .env
+Gemfile.lock
 
 .byebug_history
