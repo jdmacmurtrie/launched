@@ -1,5 +1,5 @@
 ![Build Status](https://codeship.com/projects/eb1dac80-8ffc-0135-d228-221ed15e40b3/status?branch=master)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c7950ed4bcfc52544f35/test_coverage)](https://codeclimate.com/github/jdmacmurtrie/launched/test_coverage)
+![Code Climate](https://codeclimate.com/github/jdmacmurtrie/launched.png)
 [![Coverage Status](https://coveralls.io/repos/github/jdmacmurtrie/launched/badge.svg?branch=master)](https://coveralls.io/github/jdmacmurtrie/launched?branch=master)
 
 # Launched
