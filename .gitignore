@@ -20,5 +20,6 @@
 /coverage
 .env
 Gemfile.lock
+package-lock.json
 
 .byebug_history
