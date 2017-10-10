@@ -1,6 +1,6 @@
 # Launched
 
-One Paragraph of project description goes here
+A review site for Launch Projects
 
 ## Getting Started
 
