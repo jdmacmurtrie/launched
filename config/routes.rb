@@ -3,10 +3,12 @@ Rails.application.routes.draw do
   root 'static_pages#welcome'
   namespace :api do
     namespace :v1 do
-      resources :projects, only: [:index]
+      resources :projects, only: [:index] do
+        resources :likes, only: [:create]
+      end
 
       namespace :admin do
-        resources :projects
+        resources :projects, only: [:create]
       end
     end
   end

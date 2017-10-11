@@ -10,7 +10,7 @@ class Api::V1::Admin::ProjectsController < ApplicationController
       end
     else
       render status: :unprocessable_entity,
-      json: { error: "You are unauthorized to execute this action" }.as_json
+      json: { error: "You are unauthorized to execute this action" }
     end
   end
 

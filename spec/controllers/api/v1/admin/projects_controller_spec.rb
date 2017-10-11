@@ -29,6 +29,7 @@ RSpec.describe Api::V1::Admin::ProjectsController, type: :controller do
         post :create, params: { project: good_project_params }
 
         expect(response.status).to eq 201
+        expect(Project.count).to eq 1
       end
 
       it 'project post is unsuccessful' do
