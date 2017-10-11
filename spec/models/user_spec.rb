@@ -1,7 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it 'is a test of a test' do
-    expect(true).to be true
+  it { should validate_presence_of(:first_name) }
+  it { should validate_presence_of(:last_name) }
+  it { should validate_presence_of(:email) }
+  it { should validate_presence_of(:password) }
+
+  it "validates uniqueness of email" do
+    expect(create(:user)).to validate_uniqueness_of(:email)
   end
 end
