@@ -13,7 +13,8 @@ RSpec.describe Api::V1::ProjectsController, type: :controller do
             "description"=>project_1.description,
             "url"=>project_1.url,
             "screenshot"=>project_1.screenshot,
-            "project_type"=>project_1.project_type
+            "project_type"=>project_1.project_type,
+            "likes"=>project_1.likes.count
           },
           {
             "id"=>project_2.id,
@@ -21,7 +22,8 @@ RSpec.describe Api::V1::ProjectsController, type: :controller do
             "description"=>project_2.description,
             "url"=>project_2.url,
             "screenshot"=>project_2.screenshot,
-            "project_type"=>project_2.project_type
+            "project_type"=>project_2.project_type,
+            "likes"=>project_2.likes.count
           }
         ]
       }
