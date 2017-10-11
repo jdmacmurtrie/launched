@@ -9,11 +9,18 @@ var config = {
   module: {
     loaders: [
       {
+        include: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       }
     ]
+  },
+  resolve: {
+    extensions: ['', '.json', '.jsx', '.js']
   },
   devtool: 'eval-source-map'
 }

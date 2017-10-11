@@ -11,10 +11,9 @@ describe('Normal User visits Index page of Projects', () => {
     wrapper = mount(<App />);
   });
 
-  it('Renders a bunch of awesome projects', done => {
-    let text = wrapper.text()
+  it('Renders a bunch of awesome projects', () => {
     setTimeout(() => {
-      expect(text).toMatch('hi mom')
-    }, 5000)
+      expect(wrapper.text()).toMatch('hi mom')
+    }, 0)
   });
 });
