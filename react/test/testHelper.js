@@ -3,8 +3,12 @@ import jasmineEnzyme from 'jasmine-enzyme';
 import React from 'react';
 import $ from 'jquery';
 import 'jasmine-ajax';
+import stubGlobalFetch from './support/stubGlobalFetch';
+import createFetchResponseFromFixture from './support/createFetchResponseFromFixture';
 
 Object.assign(global, {
+  createFetchResponseFromFixture,
+  stubGlobalFetch,
   jasmineEnzyme,
   mount,
   React,

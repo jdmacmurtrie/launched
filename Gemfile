@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-ruby "2.3.3"
+ruby '2.3.3'
 
 gem 'rails', '~> 5.1.0'
 gem 'pg', '~> 0.18'
@@ -26,6 +26,8 @@ group :development, :test do
   gem 'shoulda'
   gem 'valid_attribute'
   gem 'coveralls', require: false
+  gem 'simplecov', require: false
+  gem 'database_cleaner'
 end
 
 group :production do
