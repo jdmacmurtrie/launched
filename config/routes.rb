@@ -6,8 +6,11 @@ Rails.application.routes.draw do
       resources :projects, only: [:index]
 
       namespace :admin do
-        resources :projects
+        resources :projects, only: [:index, :create]
       end
     end
+  end
+  namespace :admin do
+    resources :projects, only: [:index]
   end
 end

@@ -27,6 +27,10 @@ class App extends React.Component {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
+  componentWillReceiveProps(nextProps, nextState) {
+    debugger
+  }
+
   render() {
     let projects = this.state.projects.map(project => {
       return(
