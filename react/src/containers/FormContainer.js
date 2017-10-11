@@ -43,20 +43,11 @@ class FormContainer extends React.Component {
   }
 
   addNewProject(formPayload) {
-    console.log(formPayload);
     fetch('/api/v1/admin/projects', {
+      credentials: 'same-origin',
       method: 'POST',
       body: JSON.stringify(formPayload),
-      credentials: 'same-origin'
-    })
-    .then(response => {
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-        error = new Error(errorMessage);
-        throw(error);
-      }
+      headers: { 'Content-Type': 'application/json' }
     })
     // .then(response => response.json())
     // .then(body => {
@@ -73,7 +64,7 @@ class FormContainer extends React.Component {
       url: this.state.url,
       screenshot: this.state.screenshot,
       description: this.state.description,
-      projectType: this.state.projectType
+      project_type: this.state.projectType
     }
 
     this.addNewProject(formPayload);
