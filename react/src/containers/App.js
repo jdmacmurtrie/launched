@@ -38,6 +38,7 @@ class App extends React.Component {
           description = {project.description}
           screenshot = {project.screenshot}
           project_type = {project.project_type}
+          likeCount = {project.likes}
           />
         )
       })

@@ -14,6 +14,7 @@ describe('Normal User visits Index page of Projects', () => {
   it('Renders a bunch of awesome projects', done => {
     setTimeout(() => {
       expect(wrapper.text()).toMatch('hi mom');
+      expect(wrapper.text()).toMatch('Likes: 100');
       done();
     }, 0)
   });
