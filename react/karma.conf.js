@@ -10,6 +10,8 @@ module.exports = function(config) {
 
     // files that Karma will server to the browser
     files: [
+      // load fixtures
+      'test/fixtures/*.json',
       // use Babel polyfill to emulate a full ES6 environment in PhantomJS
       '../node_modules/babel-polyfill/dist/polyfill.js',
       // entry file for Webpack
@@ -20,6 +22,8 @@ module.exports = function(config) {
 
     // before serving test/testHelper.js to the browser
     preprocessors: {
+      // process json files with karma-json-fixtures-preprocessor
+      'test/fixtures/*.json': ['json_fixtures'],
       '../react/test/testHelper.js': [
         // use karma-webpack to preprocess the file via webpack
         'webpack',

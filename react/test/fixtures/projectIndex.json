@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "hi mom",
+      "description": "a greeting for ones mother",
+      "url": "hellomother.com",
+      "screenshot": "https://img00.deviantart.net/f2e1/i/2005/198/3/2/hi_mom_by_dracula_vs_werewolf.jpg",
+      "project_type": "Group Project"
+    }
+  ]
+}
