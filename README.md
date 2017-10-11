@@ -97,7 +97,7 @@ Feel free to contact us if you feel like contributing!
 * **Dave Macmurtrie** - [jdmacmurtrie](https://github.com/jdmacmurtrie)
 * **Sebastian Kopp** - [smkopp92](https://github.com/smkopp92)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/jdmacmurtrie/launched/contributors) who participated in this project.
 
 ## License
 
