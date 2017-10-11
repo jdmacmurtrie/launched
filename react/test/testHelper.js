@@ -1,5 +1,6 @@
 import { shallow, mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
+import ReactTestUtils                 from 'react-addons-test-utils';
 import React from 'react';
 import $ from 'jquery';
 import 'jasmine-ajax';
@@ -18,6 +19,10 @@ Object.assign(global, {
 
 beforeEach(() => {
   jasmineEnzyme();
+});
+
+afterEach(() => {
+  if(global.page) { global.page.unmount(); }
 });
 
 // function to require all modules for a given context

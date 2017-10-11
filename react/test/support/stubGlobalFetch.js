@@ -10,7 +10,7 @@ let stubGlobalFetch = (urlOptions) => {
         let result = urlOptions[stubbedUrl];
 
         if(result.constructor == Object){
-          if(payload.method) {
+          if(payload && payload.method) {
             let options = result[payload.method];
 
             if (Array.isArray(options)) {
