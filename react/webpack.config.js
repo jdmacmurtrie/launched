@@ -20,7 +20,7 @@ var config = {
     ]
   },
   resolve: {
-    extensions: ['', '.json', '.jsx', '.js']
+    extensions: ['.json', '.jsx', '.js']
   },
   devtool: 'eval-source-map'
 }
