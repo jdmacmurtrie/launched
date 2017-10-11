@@ -8,75 +8,94 @@ A review site for Launch Projects.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This project is a Ruby on Rails application with a React.js front end.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+In order to run this application locally, you must at least have Ruby 2.3.3, Rails 5.1.0, node 4.0.0, and npm 5.3.0 installed.
 
-```
-Give examples
+```no-highlight
+$ ruby -v
+=> ruby 2.3.3
+$ rails -v
+=> Rails 5.1.4
+$ node -v
+=> v4.0.0
+$ npm -v
+=> 5.3.0
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+To install all your gem and npm dependencies, run the following commands:
 
 ```
-Give the example
+$ bundle
+$ npm install
 ```
 
-And repeat
+### Setting up
+
+In order to get the application running in a development server, you will need to configure the database on your local machine.
+
+Create your database from the `config/database.yml` file.
 
 ```
-until finished
+$ rake db:create
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Run the migrations located in the `db/migrate` folder to setup your schema with the following command:
+
+```
+$ rake db:migrate
+```
+
+You should be able to open up your rails console and have access to your rails models.
+
+### Running the development server
+
+In order to run the rails app in a development server, run the following command in your terminal:
+
+```
+$ rails s
+```
+
+Then, in a separate terminal window, run the following command to start the webpack server:
+
+```
+$ npm start
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Capybara and RSpec are used to test the rails application, while Jasmine and Enzyme are used to test the React front end.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+To run the rails spec tests, use the following commands:
 
 ```
-Give an example
+$ rake db:test:prepare
+$ rake
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+To execute the enzyme tests, run the following command (preferably in a separate terminal window):
 
 ```
-Give an example
+$ npm test
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+This application is deployed using Heroku using these instructions: https://devcenter.heroku.com/articles/git
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+Feel free to contact us if you feel like contributing!
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kylee Acker** - [kyjoya](https://github.com/kyjoya)
+* **Dave Macmurtrie** - [jdmacmurtrie](https://github.com/jdmacmurtrie)
+* **Sebastian Kopp** - [smkopp92](https://github.com/smkopp92)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -86,6 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Hundreds of Launch Academy Alumni who endured Group Projects
