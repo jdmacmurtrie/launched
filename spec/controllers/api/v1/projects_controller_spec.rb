@@ -21,7 +21,7 @@ RSpec.describe Api::V1::ProjectsController, type: :controller do
             "description"=>project_2.description,
             "url"=>project_2.url,
             "screenshot"=>project_2.screenshot,
-            "project_type"=>project_2.project_type,
+            "project_type"=>project_2.project_type
           }
         ]
       }

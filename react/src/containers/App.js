@@ -9,23 +9,23 @@ class App extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   fetch('sebs api')
-  //   .then(response => {
-  //     if (response.ok) {
-  //       return response;
-  //     } else {
-  //       let errorMessage = `${response.status} (${response.statusText})`,
-  //       error = new Error(errorMessage);
-  //       throw(error);
-  //     }
-  //   })
-  //   .then(response => response.json())
-  //   .then(body => {
-  //     this.setState({ projects: body.projects })
-  //   })
-  //   .catch(error => console.error(`Error in fetch: ${error.message}`));
-  // }
+  componentDidMount() {
+    fetch('api/v1/projects')
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({ projects: body.projects })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
 
   render() {
     let projects = this.state.projects.map(project => {
