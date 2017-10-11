@@ -9,17 +9,19 @@ RSpec.describe Api::V1::ProjectsController, type: :controller do
         [
           {
             "id"=>project_1.id,
-            "title"=>"Whale Review Site #1",
-            "description"=>"A review site for whales", "url"=>"www.whalereviews.dog",
-            "screenshot"=>"https://ichef.bbci.co.uk/news/660/cpsprodpb/115CA/production/_90741117_0bebad60-b644-409a-83cb-5cd96a539a4c.jpg",
-            "project_type"=>"Group Project"
+            "title"=>project_1.title,
+            "description"=>project_1.description,
+            "url"=>project_1.url,
+            "screenshot"=>project_1.screenshot,
+            "project_type"=>project_1.project_type
           },
           {
             "id"=>project_2.id,
-            "title"=>"Whale Review Site #2",
-            "description"=>"A review site for whales", "url"=>"www.whalereviews.dog",
-            "screenshot"=>"https://ichef.bbci.co.uk/news/660/cpsprodpb/115CA/production/_90741117_0bebad60-b644-409a-83cb-5cd96a539a4c.jpg",
-            "project_type"=>"Group Project"
+            "title"=>project_2.title,
+            "description"=>project_2.description,
+            "url"=>project_2.url,
+            "screenshot"=>project_2.screenshot,
+            "project_type"=>project_2.project_type,
           }
         ]
       }
