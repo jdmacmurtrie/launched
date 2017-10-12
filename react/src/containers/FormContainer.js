@@ -49,10 +49,6 @@ class FormContainer extends React.Component {
       body: JSON.stringify(formPayload),
       headers: { 'Content-Type': 'application/json' }
     })
-    // .then(response => response.json())
-    // .then(body => {
-    //   let newMovieList = this.state.movies.concat(formPayload)
-    //   this.setState({ movies: newMovieList })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
