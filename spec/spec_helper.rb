@@ -1,5 +1,7 @@
 require 'coveralls'
+require 'simplecov'
 Coveralls.wear!('rails')
+SimpleCov.start
 
 RSpec.configure do |config|
   require_relative 'support/database_cleaner'
