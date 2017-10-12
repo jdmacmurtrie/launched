@@ -8,7 +8,7 @@ feature 'user visits static pages' do
   end
 
   scenario 'admin projects new' do
-    visit root_path
+    visit admin_projects_path
 
     expect(page).to have_content("Boo Ya")
   end
