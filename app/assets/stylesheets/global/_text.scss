@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Neuton');
+
+$montserrat: 'Montserrat', sans-serif;
+$neuton: 'Neuton', serif;
+
+*
+{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body
+{
+	font: 100% $neuton;
+  color: #000;
+}

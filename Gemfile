@@ -6,6 +6,10 @@ gem 'rails', '~> 5.1.0'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+gem 'refills'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'devise'
@@ -29,6 +33,7 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov', require: false
   gem 'database_cleaner'
+  gem 'faker'
 end
 
 group :production do
