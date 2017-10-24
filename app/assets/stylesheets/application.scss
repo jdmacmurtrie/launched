@@ -1,7 +1,12 @@
-@import "utils/_breakpoints";
-
+@import "skeleton/skeleton";
 @import "bourbon/bourbon";
-@import "base/base";
-@import "neat/neat";
 
-@import "global/text"
+@import "utils/mixins";
+// @import "utils/reset";
+
+@import "global/text";
+@import "global/colors";
+
+@import "components/hero-container";
+@import "components/nav-bar";
+@import "components/project-card";

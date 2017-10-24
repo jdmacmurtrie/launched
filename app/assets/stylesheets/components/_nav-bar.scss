@@ -1,0 +1,18 @@
+.la-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  background: $darkGray;
+
+  button {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

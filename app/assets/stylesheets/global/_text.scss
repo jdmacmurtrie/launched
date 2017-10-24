@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Neuton');
+@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans');
 
-$montserrat: 'Montserrat', sans-serif;
-$neuton: 'Neuton', serif;
+$hind: 'Hind', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
 *
 {
@@ -11,6 +11,6 @@ $neuton: 'Neuton', serif;
 
 body
 {
-	font: 100% $neuton;
+	font: 100% $open-sans;
   color: #000;
 }

@@ -59,12 +59,6 @@ b {
   margin: 0;
 }
 
-.clearfix() {
-  zoom: 1;
-  &:before { content: ''; display: block; }
-  &:after { content: ''; display: table; clear: both; }
-}
-
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
