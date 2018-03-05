@@ -4,7 +4,7 @@ feature 'user signs in' do
   let(:user) { create(:user) }
   scenario 'an existing user specifies a valid email and password' do
     visit root_path
-    click_link 'Sign In'
+    click_link 'Log In'
 
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
@@ -16,7 +16,7 @@ feature 'user signs in' do
 
   scenario 'a nonexistant email and password is supplied' do
     visit root_path
-    click_link 'Sign In'
+    click_link 'Log In'
 
     fill_in 'Email', with: 'ayyyy@lm.ao'
     fill_in 'Password', with: 'cutefuzzypuppykitten'
@@ -29,7 +29,7 @@ feature 'user signs in' do
 
   scenario 'an existing email with the wrong password is denied access' do
     visit root_path
-    click_link 'Sign In'
+    click_link 'Log In'
 
     fill_in 'Email', with: user.email
     fill_in 'Password', with: "WRONG"

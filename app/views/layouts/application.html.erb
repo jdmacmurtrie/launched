@@ -14,16 +14,16 @@
     <% end %>
     <nav class="la-nav-bar">
       <% if user_signed_in? %>
-        <button>
-          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-        </button>
+        <div class="button">
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+        </div>
       <% else %>
-        <button>
-          <%= link_to 'Sign In', new_user_session_path %></li>
-        </button>
-        <button>
-          <%= link_to 'Sign Up', new_user_registration_path %></li>
-        </button>
+        <div class="button">
+          <%= link_to 'Log In', new_user_session_path %>
+        </div>
+        <div class="button">
+          <%= link_to 'Sign Up', new_user_registration_path %>
+        </div>
       <% end %>
     </nav>
     <div class="la-hero-container">
