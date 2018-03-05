@@ -43,7 +43,7 @@ class App extends React.Component {
         )
       })
     return(
-      <div>
+      <div className="container la-grid-container">
         {projects}
       </div>
     )

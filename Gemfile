@@ -29,6 +29,7 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov', require: false
   gem 'database_cleaner'
+  gem 'faker'
 end
 
 group :production do

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Open+Sans');
+
+$hind: 'Hind', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+*
+{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body
+{
+	font: 100% $open-sans;
+  color: #000;
+}
