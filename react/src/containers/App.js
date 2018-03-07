@@ -1,34 +1,15 @@
 import React from 'react'
 import Project from '../components/Project'
+import { connect } from 'react-redux';
+import { getProjects } from '../actions/getProjects'
 
 class App extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      projects: []
-    }
-  }
-
   componentDidMount() {
-    fetch('api/v1/projects')
-    .then(response => {
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-        error = new Error(errorMessage);
-        throw(error);
-      }
-    })
-    .then(response => response.json())
-    .then(body => {
-      this.setState({ projects: body.projects })
-    })
-    .catch(error => console.error(`Error in fetch: ${error.message}`));
+    this.props.getProjects()
   }
 
   render() {
-    let projects = this.state.projects.map(project => {
+    let projects = this.props.projects.map(project => {
       return(
         <Project
           key = {project.id}
@@ -50,4 +31,16 @@ class App extends React.Component {
   }
 }
 
-export default App
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getProjects: () => dispatch(getProjects())
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    projects: state.projects
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
