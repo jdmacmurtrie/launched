@@ -1,6 +1,6 @@
 import App from 'containers/App';
 
-describe('Normal User visits Index page of Projects', () => {
+xdescribe('Normal User visits Index page of Projects', () => {
   let wrapper;
 
   beforeEach(() => {
