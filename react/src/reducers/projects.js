@@ -9,7 +9,7 @@ let projects = (state = initialState, action) => {
   switch (action.type) {
     case GET_PROJECTS_REQUEST_SUCCESS:
       return Object.assign({}, state, {
-        projects: action.projects,
+        projects: action.projects.projects,
       });
     case GET_PROJECTS_REQUEST_FAILURE:
       return Object.assign({}, state, {
